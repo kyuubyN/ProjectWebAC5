@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Computating AC5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+    <div class="backgroundMain">
+        <img src="design/background1.jpeg" alt="">
+        <h1>Quantum Computating<span class="underline">_</span></h1>
+        <div class="firstBtt" onclick="location.href='#textoAbt'"><button>Learn Now!</button></div>
+    </div>
+
+
+    <header>
+        <nav>
+
+            <ol>
+                <a href="index.html" class="logo"><img src="https://cdn-icons-png.flaticon.com/512/1534/1534094.png" alt=""></a>
+                <div class="navz">
+
+
+                    <a href="index.html">
+                        <li>Main</li>
+                    </a>
+                    <a href="about.html">
+                        <li>About quantum computing</li>
+                    </a>
+                    <a href="ingress.html">
+                        <li>How to ingress</li>
+                    </a>
+                    <a href="uses.html">
+                        <li>practical applications</li>
+                    </a>
+                    <a href="challenges.html">
+                        <li>Challenges and Opportunities</li>
+                    </a>
+                    <a href="math.html">
+                        <li>Math of Quantum Computing</li>
+                    </a>
+
+                </div>
+            </ol>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="texto1" id="textoAbt">
+
+        
+       <h2>What is Quantum Computing?</h2>
+       <p>The fundamental basis of quantum computation is Landauer’s observation that all information is
+        ultimately physical [1, 2]. Information, the 1's and 0's of classical computers, must inevitably be
+        recorded by some physical system - be it paper or silicon. Which brings us to the key point. As far as
+        we know today, all matter is composed of atoms - nuclei and electrons - and the interactions and time
+        evolution of atoms are governed by the laws of quantum mechanics. Although the peculiarities of the
+        quantum world may not seem readily apparent at first glance, a closer look reveals that applications
+        of quantum mechanics are all around us (see for example Ref. [3]). As has been emphasized by
+        Minsky [4], the very existence of atoms owes everything not to the chaotic uncertainties of classical
+        mechanics, but rather to the certainties of quantum mechanics with the Pauli exclusion principle and
+        well-defined and stable atomic energy levels! Indeed without our quantum understanding of the solid
+        state and the band theory of metals, insulators and semiconductors, the whole of the semiconductor
+        industry with its transistors and integrated circuits - and hence the computer on which I am writing
+        this lecture - could not have developed. The same can be said about quantum optics and lasers: huge
+        industries - from optical communications to music and video CDs - have their basis in these
+        intrinsically quantum technologies.
+        <br><br>
+        At bottom then, everything is quantum mechanical and, like Feynman in his visionary 1959
+        ‘Plenty of Room at the Bottom’ talk [5], we can certainly envisage storing bits of information on
+        single atoms or electrons. However, these microscopic objects do not obey Newton's Laws of
+        classical mechanics: instead, they evolve and interact according to the Schroedinger equation, the
+        ‘Newton's Law’ of quantum mechanics. In fact, we know now that even this is only a suitable
+        approximation for everyday speeds and energies: at high speeds and energies, we must use the Dirac
+        <br><br>
+        equation and Einstein's relativity, with its predictions of relativistic mass increase and particle-
+        antiparticle creation, must be taken into account. However, for most of our everyday concerns, it is
+        <br><br>
+        safe for us to ignore these complications and use the non-relativistic version of quantum mechanics
+        embodied by Schroedinger's equation.
+        Information is ultimately not an abstract concept - it must be recorded and stored on media that
+        are fundamentally quantum mechanical. We must therefore broaden our definition of information as
+        merely a string of 1's and 0's and examine the consequences of the quantum nature of media for
+        information. The implications of this new field of quantum information theory are still being
+        explored and may yet deliver more surprises. However, to introduce quantum computing, we shall
+        only need a few quantum concepts and principles. But before we turn to a discussion of qubits and
+        the like, we must now make an apparently puzzling diversion and introduce some ideas of Ed Fredkin
+        and Charles Bennett about reversible computing and reversible logic gates.</p>
+    </div>
+<br><br><br><br><br><br><br><br>
+    <div class="cliqueBtt">
+        <button>
+            Clique para saber mais!
+        </button>
+    </div>
+    <div id="siteContent">
+        <h3>Complexity</h3>
+        <p>Complexity is the study of algorithms. The ‘universality’ of Turing Machines makes it possible for
+            computer scientists to classify algorithms into different ‘complexity classes’. For example,
+            multiplication of two N x N matrices requires an operation count that grows like N
+            <br><br>
+            3 with the size of
+            the matrix. This can be analysed in detail for a simple Turing machine implementation of the
+            algorithm. However, the important point about ‘universality’ is that although you may be able to
+            multiply matrices somewhat faster than on a Turing machine, you cannot change from an N
+            3<br>
+            growth
+            of operations no matter what Pentium chip or special purpose matrix multiply hardware you choose
+            to use. Thus algorithms, such as matrix multiply, for which execution time and resources grow
+            polynomially with problem size, are said to be ‘tractable’ and in the complexity class ‘P’. Algorithms<br>
+            for which time and resources are found to grow exponentially with problem size are said to be
+            ‘intractable’. There are many subtleties to this classification scheme: the famous ‘Travelling
+            Salesperson Problem’, for example, is in the rather mysterious complexity class ‘NP’. The book by
+            David Harel [12] contains an excellent introduction to this subject.
+            What has this to do with quantum information and quantum computers? In 1985 David
+            Deutsch pointed out that since a quantum computer was not a Turing machine there was the
+            possibility of new complexity classification of algorithms [13]. As we will see, quantum computers
+            evolve a coherent superposition of quantum states so that each of these states could follow a distinct<br>
+            computational path until a final measurement is made at the output. It is therefore certainly
+            conceptually possible that at least for some problems, quantum computers could surpass the power of
+            classical Turing computers. The first speculation that this might be so is probably due to Feynman in
+            1981 [14].<br><br> However, it was not until 1994 that interest in this subject exploded after Peter Shor's
+            discovery of a new quantum algorithm for factorizing large numbers [15].
+            Mathematicians believe (although it has yet to be proved) that the number of steps required on
+            a classical computer to factorize a number with N decimal digits grows exponentially with N. Since
+            the computational work required grows very rapidly, the difficulty of factorizing very large numbers<br>
+            has been made the basis of the security of the RSA encryption method (see Ref. [13] for a good
+            review of encryption techniques). This system is widely used to protect electronic bank accounts, for<br>
+            example. The significance of Shor's result was that his algorithm, running on a quantum computer,
+            could solve the factorization problem in polynomial time. What this could mean for the RSA
+            cryptographic system may be illustrated by the time required to factorize a 129 digit number known
+            as RSA129 [16]. In 1994 this required 5000 MIPS-years of computer time to factorize into its 64 and
+            65 bit prime factors, using over 1000 workstations over a period of 8 months. A quantum computer
+            using Shor's algorithm with a clock speed of 100 MHz could factor RSA129 in a few seconds. This
+            explains the interest of various ‘secret’ government agencies around the world in the feasibility of
+            building quantum computers!</p>
+    </div>
+        <br><br><br><br>
+    </main>
+    <!--Aqui é o footer-->
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h2>Desenvolvedores</h2>
+                <ul>
+                    <a href="" target="_blank" style="text-decoration: none;">
+                        <li>Kauê Oliveira</li>
+                        <li>Matheus Geraldi</li>
+                        <li>Vinicius Gomes</li>
+                        <li>Thiago Felix</li>
+
+                    </a>
+
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

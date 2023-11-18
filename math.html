@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Computating AC5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+    <div class="backgroundMain">
+        <img src="design/background1.jpeg" alt="">
+        <h1>Quantum Computating<span class="underline">_</span></h1>
+        <div class="firstBtt" onclick="location.href=''"><button>Learn Now!</button></div>
+    </div>
+
+
+    <header>
+        <nav>
+
+            <ol>
+                <a href="index.html" class="logo"><img src="https://cdn-icons-png.flaticon.com/512/1534/1534094.png" alt=""></a>
+                <div class="navz">
+
+
+                    <a href="index.html">
+                        <li>Main</li>
+                    </a>
+                    <a href="about.html">
+                        <li>About quantum computing</li>
+                    </a>
+                    <a href="ingress.html">
+                        <li>How to ingress</li>
+                    </a>
+                    <a href="uses.html">
+                        <li>practical applications</li>
+                    </a>
+                    <a href="challenges.html">
+                        <li>Challenges and Opportunities</li>
+                    </a>
+                    <a href="math.html">
+                        <li>Math of Quantum Computing</li>
+                    </a>
+
+                </div>
+            </ol>
+        </nav>
+    </header>
+
+
+    <main>
+        
+        <div class="texto1" id="textoAbt">
+            <h2>Quantum computing</h2>
+            <p>Quantum computing may be just around the corner or it may be, for all practical purposes, permanently out of reach: The physics needed for a useful quantum computer has not yet been discovered, and may in fact not exist.
+                <br><br>
+                A quantum computer, real or potential, is essentially different from an adding machine. Whereas the dials in Pascal's A.D. 1645 brass calculator always line up to read out exactly one 6-digit number, the set of qubits in a quantum register exist in a superposition of states: When the register is interrogated one of these states is read out, with a definite probability, and the remaining information is lost. Because the register can simultaneously be "in" a huge number of states, a huge number of calculations may be carried out simultaneously. But the inputs to a quantum computer must be organized to take advantage of superposition, and the calculating process must force the probabilistic output to give useful information.
+                <br><br> This is the problem of programming a quantum computer, and in certain important and interesting cases it has been solved. One of the quantum computing algorithms, a factorization algorithm due to Peter Shor, will be the focus of these two columns.</p>
+         </div>
+         <br><br><br><br><br><br><br><br>
+    <div class="cliqueBtt">
+        <button>
+            Clique para saber mais!
+        </button>
+    </div>
+    <div id="siteContent">
+        <h2>Math of quantum</h2>
+        <p>Communication security today is almost universally ensured by the use of RSA encryption. 
+            <br>
+            This method relies on the inaccessibility of large prime factors of a large composite number. The problem is an artificial one: The encrypter takes two (or more) large primes and multiplies them. The decrypter tries to work backwards from the product to the factors. It is hard work. The largest number factored so far ("RSA-640") had 193 decimal digits and took "approximately 30 2.2GHz-Opteron-CPU years," over five months of calendar time. At that rate a 1024-bit number, the size currently recommended by a commercial cryptology site, would take on the order of 10145 years ("bit" is short for "binary digit;" each additional bit contributes a factor of 2 to the size of the calculation). The site adds: "For more security or if you are paranoid, use 2048 or even 4096 bits."
+            <br><br>
+            A quantum computer of suitable size could factor these large numbers in a much shorter time. For a 1024-bit number, Shor's Algorithm requires on the order of 10243, about one billion, operations. I do not have any information on how quickly quantum operations can be executed, but if each one took one second our factorization would last 34 years. If a quantum computer could run at the speed of today's electronic computers (100 million instructions per second and up) then factorization of the 1024-bit number would be a matter of seconds.
+            <br><br>
+            A note on "suitable size." To run Shor's Algorithm on a 1024-bit number requires two quantum registers, one of 2048 qubits and one of 1024. These qubits all have to be "in coherence," so that the totality of their states behaves as a single, entangled state. (More about entanglement later). It was reported as an extraordinary technical feat when IBM scientists in 2001 constructed a coherent quantum register with 7 qubits and used it with Shor's Algorithm to factor 15.
+            <br><br>
+            This column and next month's will present a description of Shor's Factorization Algorithm in terms appropriate for a general mathematical audience. This month will cover the number-theoretical underpinning along with the Discrete and Fast Fourier Transforms. These convert factorization into a frequency-detection problem which is structured so that it can be adapted for quantum computation. The problem itself has a definite answer but takes exponential time to get there. Next month's column will address the more specifically quantum-computational aspects of the algorithm, including superposition and entanglement, leading up to Shor's ingenious quantum jiu-jitsu, which forces the quantum read-out, with high probability, to give a useful answer. That probability is high enough, and the running time on a suitable machine would be short enough, for the calculation to be repeated until the unknown factors are produced.
+            <br><br>
+            Number Theory and Fourier Analysis
+            {C}
+            The light from a star can be split into a spectrum, where the characteristic frequencies of its elements can be detected. Analogously, a composite number N can be made to generate a spectrum, from which its factors can be calculated.
+            <br><br>
+            Choose a number a relatively prime to N, and make the list of integer powers of a modulo N: a, a2, a3, ... . If a and N are relatively prime, it follows from a theorem of Euler that this list will eventually include the number 1. (Euler's Theorem says specifically that if φ(N) denotes the number of positive integers less that N which are coprime to N then aφ(N) is congruent to 1 modulo N). Suppose this happens for an even power of a, say a2b = 1 mod N, i.e. a2b – 1 = 0 mod N. This means that (ab + 1) (ab – 1) is a multiple of N; if it is one times N we have our factors; otherwise the Euclidean Algorithm will speedily find a common factor of, say, ab + 1 and N.
+            <br><br>
+            These examples are trivially simple, but illustrate the phenomenon:
+            <br><br>
+            Take N = 85 and a = 19. The powers of 19 mod 85 are 19, 21, 59, 16, 49, 81, 9, 1, 19, 21, ...; in particular 198 = 1 mod 85. We deduce that 194 + 1 = 17 and 194 – 1 = 15 both have common factors with 85. In fact the first is a factor and the second has 5 as common divisor with 85.
+             
+            <br><br>
+            Take N = 85 and a = 33. The powers of 33 mod 85 are 33, 69, 67, 1, 33, 69, 67, 1, ...; in particular 334 = 1 mod 85. We deduce that 332 + 1 = 70 and 332 – 1 = 68 both have common factors with 85. In fact the first yields 5 and the second 17.
+             
+            <br><br>
+            Note that φ(85) = 64, so 64 would always work; but this number cannot be calculated a priori: you have to know the prime factorization 85 = 17 x 5, and use the rule φ(pq) = (p–1)(q–1) for p and q prime.
+            <br>
+            How do we get our hands on b? Just examining the terms of the sequence and waiting for 1 to show up takes too long, because the length of the list is commensurate with the number N we want to factor: It increases exponentially with the number, say n, of bits used to write N. But think of the stream of numbers a mod N, a2 mod N, a3 mod N, ... as the light emitted by N. If we can find the frequency, or equivalently the period, with which this sequence repeats itself, we can use the equivalence aj = ak <=> aj–k = 1 (modulo N), and find a factorization of N as above. We will see that on a quantum computer, this computation requires a number of steps increasing only as a polynomial in n. That is the key to quantum factorization.</p>
+            <div class="imgQuantum2">
+            <img src="https://www.ams.org/featurecolumn/images/may2007/c_n-integral.jpg" alt="">
+            <img src="https://www.ams.org/featurecolumn/images/may2007/parseval.jpg" alt="">
+        </div>
+    </div>
+        <br><br><br><br>
+    </main>
+    <!--Aqui é o footer-->
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h2>Desenvolvedores</h2>
+                <ul>
+                    <a href="" target="_blank" style="text-decoration: none;">
+                        <li>Kauê Oliveira</li>
+                        <li>Matheus Geraldi</li>
+                        <li>Vinicius Gomes</li>
+                        <li>Thiago Felix</li>
+
+                    </a>
+
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
